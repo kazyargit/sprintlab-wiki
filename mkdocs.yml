@@ -12,24 +12,27 @@ theme:
   language: ru
   logo: assets/logo.svg
   favicon: assets/logo.svg
+  font:
+    text: Nunito
+    code: Fira Code
   icon:
-    repo: fontawesome/brands/github
+    repo: fontawesome/brands/git-alt
   palette:
     - scheme: default
       primary: custom
       accent: custom
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-night
         name: Тёмная тема
     - scheme: slate
       primary: custom
       accent: custom
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-sunny
         name: Светлая тема
   features:
-    - navigation.tabs
     - navigation.sections
+    - navigation.expand
     - navigation.indexes
     - navigation.top
     - navigation.footer
