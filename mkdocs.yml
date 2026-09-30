@@ -5,7 +5,7 @@ site_url: https://kazyargit.github.io/sprintlab-wiki/
 repo_url: https://github.com/kazyargit/sprintlab-wiki
 repo_name: kazyargit/sprintlab-wiki
 edit_uri: edit/main/docs/
-copyright: "&copy; 2026 Команда СпринтЛаб · Учебный проект, вариант 5 «Процесс разработки программного обеспечения»"
+copyright: "СпринтЛаб Wiki · вариант 5 «Процесс разработки программного обеспечения» · Я.Р. Казанцева, 2026"
 
 theme:
   name: material
@@ -74,4 +74,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra_css:
-  - assets/extra.css
+  - assets/extra.css?v=4
+
+extra:
+  generator: false
