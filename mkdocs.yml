@@ -18,18 +18,9 @@ theme:
   icon:
     repo: fontawesome/brands/git-alt
   palette:
-    - scheme: default
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/weather-night
-        name: Тёмная тема
-    - scheme: slate
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/weather-sunny
-        name: Светлая тема
+    scheme: default
+    primary: custom
+    accent: custom
   features:
     - navigation.sections
     - navigation.expand

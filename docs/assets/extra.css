@@ -30,3 +30,12 @@
 .md-typeset .grid.cards svg { fill: #c08a2e; }
 .md-footer { background-color: #1f4d40; }
 .md-footer-meta { background-color: #183d33; }
+@media screen and (min-width: 60em) {
+  .md-search__inner { width: 20rem; }
+  .md-search__input { border-radius: 20px; }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__inner { width: 34rem; }
+}
+@media screen and (min-width: 76.25em) {
+  .md-search__inner { width: 26rem; }
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__inner { width: 40rem; }
+}
