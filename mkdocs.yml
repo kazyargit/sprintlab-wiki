@@ -1,0 +1,83 @@
+site_name: СпринтЛаб Wiki
+site_description: База знаний цифрового продукта «СпринтЛаб» – платформы управления процессом разработки программного обеспечения
+site_author: Я.Р. Казанцева
+site_url: https://kazyargit.github.io/sprintlab-wiki/
+repo_url: https://github.com/kazyargit/sprintlab-wiki
+repo_name: kazyargit/sprintlab-wiki
+edit_uri: edit/main/docs/
+copyright: "&copy; 2026 Команда СпринтЛаб · Учебный проект, вариант 5 «Процесс разработки программного обеспечения»"
+
+theme:
+  name: material
+  language: ru
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Тёмная тема
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Светлая тема
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.follow
+
+nav:
+  - Главная: index.md
+  - Продукт:
+      - product/index.md
+      - Определение продукта: product/definition.md
+      - Состояние продукта: product/state.md
+      - Дополнительные метрики: product/metrics.md
+      - Развитие продукта: product/roadmap.md
+      - Артефакты: product/artifacts.md
+      - Таблица ролей: product/roles.md
+  - Техническая часть:
+      - tech/index.md
+      - Требования: tech/requirements.md
+      - Архитектура: tech/architecture.md
+      - База данных: tech/database.md
+      - Тестирование: tech/testing.md
+      - Безопасность: tech/security.md
+      - Развёртывание: tech/deploy.md
+  - Команда:
+      - Дежурства: team/on-call.md
+      - Применение ИИ: team/ai-usage.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_css:
+  - assets/extra.css
